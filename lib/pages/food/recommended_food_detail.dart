@@ -159,7 +159,7 @@ class RecommenededFoodDetail extends StatelessWidget {
                       ),
                     ),
                     BigText(
-                      text: (" ${translateDataBase(" 150 جنية x", " 150 \L\E x ")} ${controller.inCartItems} "),
+                      text: (" ${translateDataBase(" 150 جنية × ${controller.inCartItems}", " 150 \L\E x ${controller.inCartItems}")}"),
                       color: AppColors.mainBlackColor,
                       size: Dimensions.font26,
                     ),
