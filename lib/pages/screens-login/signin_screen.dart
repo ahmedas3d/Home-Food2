@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:home_food_delivery/pages/home/home_page.dart';
-import 'package:home_food_delivery/pages/home/main_food_page.dart';
 import 'package:home_food_delivery/pages/screens-login/signup_screen.dart';
 import 'package:home_food_delivery/pages/theme-login/theme.dart';
 import 'package:home_food_delivery/pages/widgets-login/custom_scaffold.dart';
 import 'package:home_food_delivery/utils/Colors.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../utils/convert.dart';
 
@@ -139,7 +139,7 @@ class _SignInScreenState extends State<SignInScreen> {
                               ),
                                Text(
                                 "${translateDataBase("تذكرنى", "  Remember me ")}",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.black45,
                                 ),
                               ),
@@ -170,7 +170,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                  // content: Text('Processing Data'),
                                 //),
                               //);
-                              Get.to(HomePage());
+                              Get.to(const HomePage());
                             } else if (!rememberPassword) {
                               ScaffoldMessenger.of(context).showSnackBar(
                                  SnackBar(
@@ -194,13 +194,13 @@ class _SignInScreenState extends State<SignInScreen> {
                             ),
                           ),
                            Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 0,
                               horizontal: 10,
                             ),
                             child: Text(
                               "${translateDataBase("قم بتسجيل الدخول من خلال", "Sign up with")}",
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.black45,
                               ),
                             ),
@@ -219,18 +219,34 @@ class _SignInScreenState extends State<SignInScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Icon(
+                          IconButton(
+                            onPressed: () async{
+                              const url = "https://www.facebook.com/ahmed.asaad.3434/";
+                              await launchUrlString(url);
+                            },
+                            icon: Icon(
                             TeenyIcons.facebook,
                             color: AppColors.blueColor,
                           ),
-                          Icon(
+                          ),
+                          IconButton(onPressed: () async{
+                            const url = "";
+                            await launchUrlString(url);
+                          },
+                            icon: Icon(
                             TeenyIcons.twitter,
                             color: AppColors.mainBlueColor,
-                          ),
-                          Icon(
+                          ),),
+                          IconButton(
+                            onPressed: () async{
+                              const url = "";
+                              await launchUrlString(url);
+                            },
+                            icon: Icon(
                             TeenyIcons.google,
                             color: AppColors.mainColor,
                           ),
+                          )
                         ],
                       ),
                       const SizedBox(
@@ -242,7 +258,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         children: [
                            Text(
                              "${translateDataBase("ليس لديك حساب؟", "Don\'t have an account?")}",
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.black45,
                             ),
                           ),

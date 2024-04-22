@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:home_food_delivery/controllers/popular_product_controller.dart';
 import 'package:home_food_delivery/controllers/recommended_product_controller.dart';
-import 'package:home_food_delivery/pages/home/home_page.dart';
+import 'package:home_food_delivery/pages/screens-login/welcome_screen.dart';
 import 'package:home_food_delivery/routes/route_helper.dart';
 import 'package:home_food_delivery/utils/app_constants.dart';
 import 'controllers/local_controller.dart';
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       translations: MyTranslation(),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: const HomePage(),
+        home: const WelcomeScreen(),
         locale: controller.language,
         theme: controller.appTheme,
         initialBinding: MyBinding(),

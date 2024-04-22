@@ -29,14 +29,14 @@ class WelcomeScreen extends StatelessWidget {
                       children: [
                         TextSpan(
                             text: "${translateDataBase("\nمرحبًا بعودتك", " Welcome Back!\n ")}",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 45.0,
                               fontWeight: FontWeight.w600,
                             )),
                         TextSpan(
                             text:
                                 "${translateDataBase("\nأدخل التفاصيل الشخصية لحساب العميل الخاص بك", "\nEnter the personal details of your customer account")}",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w600,
                               // height: 0,
@@ -52,10 +52,10 @@ class WelcomeScreen extends StatelessWidget {
               alignment: Alignment.bottomRight,
               child: Row(
                 children: [
-                   Expanded(
+                  Expanded(
                     child: WelcomeButton(
                       buttonText: "${translateDataBase("تسجيل الدخول", "Sign in")}",
-                      onTap: SignInScreen(),
+                      onTap: const SignInScreen(),
                       color: Colors.transparent,
                       textColor: Colors.white,
                     ),

@@ -1,19 +1,12 @@
 import 'dart:ffi';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:home_food_delivery/pages/home/home_page.dart';
-import 'package:home_food_delivery/pages/home/main_food_page.dart';
 import 'package:home_food_delivery/pages/profile/address.dart';
-import 'package:home_food_delivery/pages/profile/profile_screen.dart';
 import 'package:home_food_delivery/pages/profile/widget/profile_menu.dart';
 import 'package:home_food_delivery/pages/screens-login/signin_screen.dart';
 import 'package:home_food_delivery/utils/Colors.dart';
-import 'package:home_food_delivery/widgets/big_text.dart';
 import 'package:home_food_delivery/widgets/coming_soon.dart';
-import 'package:icons_plus/icons_plus.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../controllers/local_controller.dart';
