@@ -13,7 +13,7 @@ class WorkCategories {
 List<WorkCategories> categoriesModel = [
   WorkCategories(
     image: "assets/image/chef.jpeg",
-    name: "Chef",
+    name: "${translateDataBase(" شيف", "Chef")}",
   ),
   WorkCategories(
     image: "assets/image/chef.jpeg",

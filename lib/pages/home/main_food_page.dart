@@ -34,7 +34,6 @@ class MainFoodPage extends StatelessWidget {
                       Row(
                         children: [
                           SmallText(text:'${translateDataBase("الاسماعيليه", "Ismailia")}', color: Colors.black54),
-                          Icon(Icons.arrow_drop_down_rounded)
                         ],
                       )
                     ],

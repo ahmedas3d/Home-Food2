@@ -29,7 +29,7 @@ class ListChefsScreen extends StatelessWidget {
               Get.to(ProfileChef());
             },
             horizontalTitleGap: 20,
-            contentPadding: EdgeInsets.symmetric(horizontal: 18),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 18),
             leading: CircleAvatar(
               radius: 30,
               backgroundImage: AssetImage(
@@ -43,7 +43,7 @@ class ListChefsScreen extends StatelessWidget {
             subtitle: Text(chefs[index].location),
           );
         },
-        separatorBuilder: (BuildContext context, int index) => SizedBox(
+        separatorBuilder: (BuildContext context, int index) => const SizedBox(
           height: 10,
         ),
       ),

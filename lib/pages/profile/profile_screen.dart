@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:home_food_delivery/pages/home/home_page.dart';
 import 'package:home_food_delivery/pages/profile/address.dart';
 import 'package:home_food_delivery/pages/profile/widget/profile_menu.dart';
 import 'package:home_food_delivery/pages/screens-login/signin_screen.dart';
@@ -153,7 +154,7 @@ class ProfileScreen extends StatelessWidget {
                                 controller.changeLang("en");
                                 Get.forceAppUpdate();
                                 Get.appUpdate();
-                                Get.back();
+                                Get.to(const HomePage());
                               },
                               child: Text(
                                 "${translateDataBase("الانجليزية", "English")}",
@@ -171,7 +172,7 @@ class ProfileScreen extends StatelessWidget {
                                 controller.changeLang("ar");
                                 Get.forceAppUpdate();
                                 Get.appUpdate();
-                                Get.back();
+                                Get.to(const HomePage());
                               },
                               child: Text(
                                 "${translateDataBase("العربية", "Arabic")}",

@@ -1,3 +1,5 @@
+import '../../utils/convert.dart';
+
 class Chef {
   final String name;
   final String image;
@@ -11,17 +13,17 @@ class Chef {
 }
 
 List chefs = [
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Abdulrahman Eslam', 'assets/image/chef.jpeg', "Cairo"),
-  Chef('Abdullah Essam', 'assets/image/chef.jpeg', "Alshuruq"),
-  Chef('Mohamed Reda', 'assets/image/chef.jpeg', "Kafr-Saqr"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
-  Chef('Ahmed Asaad', 'assets/image/chef.jpeg', "Ismailia"),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("عبدالرحمن اسلام", "Abdulrahman Eslam")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("عبدلله عصام", "Abdullah Essam")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("محمد رضا", "Mohamed Reda")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg','${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
+  Chef('${translateDataBase("أحمد أسعد", "Ahmed Asaad")}', 'assets/image/chef.jpeg', '${translateDataBase("الاسماعيليه", "Ismailia")}'),
 ];
