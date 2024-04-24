@@ -241,8 +241,8 @@ class ProfileChef extends StatelessWidget {
                     //keyboardType: TextInputType.multiline,
                     decoration:  InputDecoration(
                         hintText: '${translateDataBase("ادخل رسالة هنا", "Enter A Message Here")}',
-                        hintStyle: TextStyle(color: Colors.grey),
-                        border: OutlineInputBorder(
+                        hintStyle: const TextStyle(color: Colors.grey),
+                        border: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(10)),
                         )),
                   ),
@@ -334,7 +334,7 @@ class ProfileChef extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image.asset(
-                              "assets/image/clip-completed-successfully.png" ,
+                              "assets/image/Animation - 1713992273789.gif",
                               height: 250,
                               width: 600,
                             ),
@@ -342,7 +342,7 @@ class ProfileChef extends StatelessWidget {
                               height: 20,
                             ),
                             Text(
-                              "${translateDataBase("لقد تم حجز طلبك بنجاح", "𝙔𝙤𝙪𝙧 𝙤𝙧𝙙𝙚𝙧 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙗𝙤𝙤𝙠𝙚𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮")}",
+                              "${translateDataBase("يتم مراجعة طلبك", "𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙗𝙚𝙞𝙣𝙜 𝙧𝙚𝙫𝙞𝙚𝙬𝙚𝙙")}",
                               style: TextStyle(
                                   fontSize: Dimensions.font16,
                                   color: Colors.black45),

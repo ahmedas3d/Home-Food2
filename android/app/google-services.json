@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "498751439934",
+    "project_id": "home-food-76f45",
+    "storage_bucket": "home-food-76f45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498751439934:android:5eaff0d9458af4208d3d6f",
+        "android_client_info": {
+          "package_name": "com.example.home_food_delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn9-yPgaYQVv-0eUpQ7ZtxH8HSJQFewZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

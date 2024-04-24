@@ -6,6 +6,7 @@ import 'package:home_food_delivery/pages/admin_chef/bottom_nav_bar.dart';
 import 'package:home_food_delivery/pages/admin_chef/form_admin.dart';
 import 'package:home_food_delivery/pages/admin_chef/orders.dart';
 import 'package:home_food_delivery/pages/screens-login/welcome_screen.dart';
+import 'package:home_food_delivery/pages/splash/splash_page.dart';
 import 'package:home_food_delivery/routes/route_helper.dart';
 import 'package:home_food_delivery/utils/app_constants.dart';
 import 'controllers/local_controller.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       translations: MyTranslation(),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: const WelcomeScreen(),
+        home: const SplashScreen(),
         locale: controller.language,
         theme: controller.appTheme,
         initialBinding: MyBinding(),
