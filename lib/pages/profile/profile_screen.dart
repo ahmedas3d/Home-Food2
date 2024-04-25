@@ -148,7 +148,7 @@ class ProfileScreen extends StatelessWidget {
                                   foregroundColor: Colors.white,
                                   backgroundColor: AppColors.mainColor,
                                   padding: const EdgeInsets.only(
-                                      right: 120, left: 120) // foreground
+                                      right: 150, left: 120) // foreground
                                   ),
                               onPressed: () {
                                 controller.changeLang("en");
@@ -166,7 +166,7 @@ class ProfileScreen extends StatelessWidget {
                                   foregroundColor: Colors.white,
                                   backgroundColor: AppColors.mainColor,
                                   padding: const EdgeInsets.only(
-                                      right: 120, left: 120) // foreground
+                                      right: 155, left: 120) // foreground
                                   ),
                               onPressed: () {
                                 controller.changeLang("ar");

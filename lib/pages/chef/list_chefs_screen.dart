@@ -15,14 +15,14 @@ class ListChefsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: BigText(
-          text: '${translateDataBase("الشيف", "Chef")}',
+          text: '${translateDataBase("الشيفات", "Chef")}',
           color: Colors.white,
         ),
         backgroundColor: AppColors.mainColor,
       ),
       body: ListView.separated(
         itemCount: chefs.length,
-        padding: EdgeInsets.symmetric(vertical: 20),
+        padding: const EdgeInsets.symmetric(vertical: 20),
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
             onTap: () {
@@ -38,7 +38,7 @@ class ListChefsScreen extends StatelessWidget {
             ),
             title: Text(
               chefs[index].name,
-              style: TextStyle(fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
             subtitle: Text(chefs[index].location),
           );
