@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
+import 'package:home_food_delivery/pages/home/home_page.dart';
 
 import '../utils/Colors.dart';
 import '../utils/convert.dart';
@@ -22,7 +22,7 @@ class DonePage extends StatelessWidget {
               height: 250,
               width: 600,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Text(
@@ -30,24 +30,24 @@ class DonePage extends StatelessWidget {
               style:
                   TextStyle(fontSize: Dimensions.font16, color: Colors.black45),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
                   backgroundColor: AppColors.mainColor,
-                  padding: EdgeInsets.only(right: 120, left: 120) // foreground
+                  padding: const EdgeInsets.only(right: 120, left: 120) // foreground
                   ),
               onPressed: () {
-                Get.back();
+                Get.to(const HomePage());
               },
               child: Text(
                 "${translateDataBase(" تم", "𝘿𝙤𝙣𝙚")}",
                 style: TextStyle(fontSize: Dimensions.font20),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
           ],

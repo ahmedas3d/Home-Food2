@@ -1,3 +1,4 @@
+
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -105,16 +106,16 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         SizedBox(
           height: 80,
           child: ListView.separated(
               scrollDirection: Axis.horizontal,
-              physics: BouncingScrollPhysics(),
-              itemBuilder: (context, index) => Categories(),
-              separatorBuilder: (context, index) => SizedBox(
+              physics: const BouncingScrollPhysics(),
+              itemBuilder: (context, index) => const Categories(),
+              separatorBuilder: (context, index) => const SizedBox(
                     width: 5,
                   ),
               itemCount: 10),
@@ -156,7 +157,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         GetBuilder<RecommendedProductController>(builder: (recommendedProduct) {
           return recommendedProduct.isloaded
               ? ListView.builder(
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemCount: recommendedProduct.recommendedProductList.length,
                   itemBuilder: (context, index) {
@@ -221,8 +222,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                       ),
                                       SmallText(
                                           text: "${translateDataBase("بخصائص مصرية", " With Egypt Characteristics ")}"),
-                                      SizedBox(
-                                        height: 5,
+                                       const SizedBox(
+                                        height: 9,
                                       ),
                                       Row(
                                         mainAxisAlignment:

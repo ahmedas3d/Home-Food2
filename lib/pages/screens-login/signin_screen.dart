@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:home_food_delivery/pages/home/home_page.dart';
 import 'package:home_food_delivery/pages/screens-login/signup_screen.dart';
 import 'package:home_food_delivery/pages/theme-login/theme.dart';

@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:home_food_delivery/controllers/cart_controller.dart';
 import 'package:home_food_delivery/controllers/popular_product_controller.dart';
 import 'package:home_food_delivery/controllers/recommended_product_controller.dart';
-import 'package:home_food_delivery/pages/cart/cart_page.dart';
 import 'package:home_food_delivery/routes/route_helper.dart';
 import 'package:home_food_delivery/utils/Colors.dart';
 import 'package:home_food_delivery/utils/app_constants.dart';
@@ -46,7 +45,7 @@ class RecommenededFoodDetail extends StatelessWidget {
                       Get.toNamed(RouteHelper.getInitial());
                     }
                   },
-                  child: AppIcon(icon: Icons.clear),
+                  child: const AppIcon(icon: Icons.clear),
                 ),
                 //AppIcon(icon: Icons.shopping_cart),
                 GetBuilder<PopularProductController>(builder: (controller) {
@@ -57,7 +56,7 @@ class RecommenededFoodDetail extends StatelessWidget {
                       },
                       child: Stack(
                         children: [
-                          AppIcon(icon: Icons.shopping_cart),
+                          const AppIcon(icon: Icons.shopping_cart),
                           Get.find<PopularProductController>().totalItems >= 1
                               ? Positioned(
                                   right: 0,
@@ -89,7 +88,7 @@ class RecommenededFoodDetail extends StatelessWidget {
               ],
             ),
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(20),
+              preferredSize: const Size.fromHeight(20),
               child: Container(
                 child: Center(
                     child: BigText(

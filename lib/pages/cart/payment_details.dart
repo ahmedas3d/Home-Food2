@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:home_food_delivery/pages/cart/payment_details_view_body.dart';
-import 'package:home_food_delivery/utils/dimensions.dart';
-
 import '../../utils/Colors.dart';
 import '../../utils/convert.dart';
 
@@ -14,7 +12,7 @@ class PaymentDetailsView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios,
             color: Colors.white,
           ),
@@ -28,7 +26,7 @@ class PaymentDetailsView extends StatelessWidget {
         title: Text(
           '${translateDataBase("بيانات الدفع", "Payment Details")}',
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w500,
             fontSize: 24,

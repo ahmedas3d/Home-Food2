@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:home_food_delivery/controllers/cart_controller.dart';
 import 'package:home_food_delivery/utils/Colors.dart';
@@ -8,7 +6,6 @@ import 'package:home_food_delivery/utils/dimensions.dart';
 import 'package:home_food_delivery/widgets/app_icon.dart';
 import 'package:home_food_delivery/widgets/small_text.dart';
 import 'package:intl/intl.dart';
-
 import '../../widgets/big_text.dart';
 import 'package:get/get.dart';
 
@@ -46,7 +43,7 @@ class CartHistory extends StatelessWidget {
             height: 100,
             color: AppColors.mainColor,
             width: double.maxFinite,
-            padding: EdgeInsets.only(top: 45, right: 35, left: 35),
+            padding: const EdgeInsets.only(top: 45, right: 35, left: 35),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

@@ -26,7 +26,7 @@ class PaymentMethodItem extends StatelessWidget {
           BoxShadow(
             color: isActive ? Colors.redAccent : Colors.white,
             blurRadius: 4,
-            offset: Offset(0, 0),
+            offset: const Offset(0, 0),
             spreadRadius: 0,
           )
         ],

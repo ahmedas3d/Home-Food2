@@ -31,18 +31,18 @@ class AppColumn extends StatelessWidget {
                 );
               }),
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             SmallText(text: '4.5'),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             SmallText(text: '1250'),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
-            SmallText(text: "${translateDataBase("كومنتات", "Comments")}")
+            SmallText(text: "${translateDataBase("تعليقات", "Comments")}")
           ],
         ),
         //comments section

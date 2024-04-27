@@ -1,9 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:home_food_delivery/utils/Colors.dart';
-import 'package:home_food_delivery/utils/dimensions.dart';
 
 import '../utils/convert.dart';
 
@@ -29,7 +25,7 @@ class CustomButton extends StatelessWidget {
           child: Text(
             "${translateDataBase(" دفع", "Pay")}",
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
                 fontSize: 22, color: Colors.white, fontWeight: FontWeight.w600),
           ),
         ),

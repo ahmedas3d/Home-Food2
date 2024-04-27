@@ -13,7 +13,7 @@ class AddressPage extends StatelessWidget {
         automaticallyImplyLeading: true,
         foregroundColor: Colors.white,
         backgroundColor: AppColors.mainColor,
-        title:  Text("${translateDataBase("العنوان", " Address ")}",style: TextStyle(color: Colors.white),),
+        title:  Text("${translateDataBase("العنوان", " Address ")}",style: const TextStyle(color: Colors.white),),
       ),
       body: const AddressList(),
       floatingActionButton: FloatingActionButton(
@@ -90,7 +90,7 @@ class AddressItem extends StatelessWidget {
   final String country;
   final VoidCallback onDelete;
 
-  const AddressItem({
+  const AddressItem({super.key,
     required this.title,
     required this.address,
     required this.city,
@@ -110,7 +110,7 @@ class AddressItem extends StatelessWidget {
           children: [
             Text(
               title,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -138,7 +138,7 @@ class AddAddressForm extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColors.mainColor,
         foregroundColor: Colors.white,
-        title:  Text("${translateDataBase("اضافة عنوان", " Add Address ")}",style: TextStyle(color: Colors.white),),
+        title:  Text("${translateDataBase("اضافة عنوان", " Add Address ")}",style: const TextStyle(color: Colors.white),),
       ),
       body: Padding(
         padding: const EdgeInsets.only(right: 16.0,left: 16.0,top: 20.0,bottom: 20.0),
@@ -149,7 +149,7 @@ class AddAddressForm extends StatelessWidget {
               TextFormField(
                 decoration:  InputDecoration(
                   labelText: "${translateDataBase("اسم العنوان", " Title Name ")}",
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                 ),
                 // Implement your logic to handle the entered title name
               ),
@@ -157,7 +157,7 @@ class AddAddressForm extends StatelessWidget {
               TextFormField(
                 decoration:  InputDecoration(
                   labelText: "${translateDataBase("العنوان", " Address ")}",
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                 ),
                 // Implement your logic to handle the entered address
               ),
@@ -165,7 +165,7 @@ class AddAddressForm extends StatelessWidget {
               TextFormField(
                 decoration:  InputDecoration(
                   labelText: "${translateDataBase("المدينة", " City ")}",
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                 ),
                 // Implement your logic to handle the entered city
               ),
@@ -173,7 +173,7 @@ class AddAddressForm extends StatelessWidget {
               TextFormField(
                 decoration:  InputDecoration(
                   labelText: "${translateDataBase("المحافظة", " Governorate ")}",
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                 ),
                 // Implement your logic to handle the entered governorate
               ),
@@ -181,7 +181,7 @@ class AddAddressForm extends StatelessWidget {
               TextFormField(
                 decoration:  InputDecoration(
                   labelText: "${translateDataBase("الدولة", " Country ")}",
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                 ),
                 // Implement your logic to handle the entered country
               ),

@@ -1,14 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:home_food_delivery/pages/home/home_page.dart';
-import 'package:home_food_delivery/pages/home/main_food_page.dart';
 import 'package:home_food_delivery/pages/screens-login/signin_screen.dart';
 import 'package:home_food_delivery/pages/theme-login/theme.dart';
 import 'package:home_food_delivery/pages/widgets-login/custom_scaffold.dart';
-import 'package:home_food_delivery/routes/route_helper.dart';
 import 'package:home_food_delivery/utils/Colors.dart';
 import 'package:icons_plus/icons_plus.dart';
 
@@ -175,7 +169,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           ),
                            Text(
                             "${translateDataBase("أوافق على معالجة", "I agree to the processing of ")}",
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.black45,
                             ),
                           ),
@@ -203,7 +197,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 //  content: Text('Processing Data'),
                                 //),
                               //);
-                              Get.to(SignInScreen());
+                              Get.to(const SignInScreen());
                             } else if (!agreePersonalData) {
                               ScaffoldMessenger.of(context).showSnackBar(
                                  SnackBar(
@@ -230,13 +224,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             ),
                           ),
                            Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 0,
                               horizontal: 10,
                             ),
                             child: Text(
                               "${translateDataBase("قم بتسجيل الدخول من خلال", "Sign up with")}",
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.black45,
                               ),
                             ),
@@ -279,7 +273,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         children: [
                            Text(
                              "${translateDataBase("هل لديك حساب؟", "Already have an account?")}",
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.black45,
                             ),
                           ),

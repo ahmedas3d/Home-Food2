@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:home_food_delivery/utils/Colors.dart';
 import 'package:home_food_delivery/widgets/big_text.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 

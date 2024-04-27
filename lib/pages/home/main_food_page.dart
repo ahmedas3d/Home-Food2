@@ -56,7 +56,7 @@ class MainFoodPage extends StatelessWidget {
             ),
           ),
           //Showing The Body
-          Expanded(
+          const Expanded(
               child: SingleChildScrollView(
             child: FoodPageBody(),
           )),

@@ -365,7 +365,7 @@ class ProfileChef extends StatelessWidget {
                                 style: TextStyle(fontSize: Dimensions.font20),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             ),
                           ],

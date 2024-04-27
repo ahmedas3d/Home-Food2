@@ -1,12 +1,6 @@
-import 'dart:developer';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-
-import '../../utils/Colors.dart';
-import '../../utils/dimensions.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_cradit_card.dart';
 import '../../widgets/done.dart';
@@ -27,7 +21,7 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SliverToBoxAdapter(
+        const SliverToBoxAdapter(
           child: SizedBox(
             height: 20,
           ),
@@ -46,7 +40,7 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: EdgeInsets.only(bottom: 20, right: 16, left: 16),
+              padding: const EdgeInsets.only(bottom: 20, right: 16, left: 16),
               child: CustomButton(
                 onTap: () {
                   if (formKey.currentState!.validate()) {
